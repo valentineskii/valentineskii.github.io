@@ -368,16 +368,16 @@ main {
   border: 3px solid rgba(150,0,75,0.1); 
   border-radius: 10px; 
   float: left; 
-  margin-right: 20px; 
-  width: 12vmax; 
-  height: 18vmax;
+  margin-right: 1vmax; 
+  width: clamp(8vmax, 12vmax, 24vmax); 
+  height: clamp(12vmax, 18vmax, 36vmax);
 }
 
 .content-img-right {
   border: 3px solid rgba(150,0,75,0.1); 
   border-radius: 10px; 
   float: right;
-  margin-left: 20px; 
+  margin-left: 1vmax; 
   width: 12vmax; 
   height: 18vmax;
 }
