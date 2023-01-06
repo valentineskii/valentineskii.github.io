@@ -1,0 +1,73 @@
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+.carousel {
+  background: rgba(100,0,40,0.2);
+  border-radius: 10px;
+  border: 3px solid rgba(150,0,75,0.1);
+  box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+}
+
+.carousel-cell {
+  height: 220px;
+  width: 320px;
+  /* flex-box, center image in cell */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+}
+
+.carousel-cell * {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected image */
+.carousel-cell.is-selected * {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
+}
+
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+  opacity: 1;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* closer to edge */
