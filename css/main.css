@@ -321,8 +321,8 @@ main {
 
 .author-img {
   border-radius: 50%;
-  width: 20vw;
-  height: 20vw;
+  width: 15vw;
+  height: 15vw;
   margin-top: 2vh;
   border: 10px solid rgba(150,0,75,0.2);
 }
