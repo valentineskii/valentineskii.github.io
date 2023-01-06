@@ -7,11 +7,12 @@
   border-radius: 10px;
   border: 3px solid rgba(150,0,75,0.1);
   box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+  width: 50%;
+  padding: 2vh 0 2vh 0;
+  margin-bottom: 0;
 }
 
 .carousel-cell {
-  height: 220px;
-  width: 320px;
   /* flex-box, center image in cell */
   display: -webkit-box;
   display: -webkit-flex;
@@ -75,3 +76,20 @@
   color: white;
 }
 /* closer to edge */
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: 0px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.9);
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: rgba(255,255,255,0.5);
+}
