@@ -319,6 +319,21 @@ main {
   border-radius: 20px;
 }
 
+.content-item h2 {
+  border-bottom: 3px solid rgba(150,0,75,0.1); 
+  padding-bottom: 1em; 
+  line-height: 1em;
+}
+
+.content-item img {
+  border: 3px solid rgba(150,0,75,0.1); 
+  border-radius: 10px; 
+  float: left; 
+  margin: 0 20px 0 0;
+  width: 250px; 
+  height: 350px;
+}
+
 .author-img {
   border-radius: 50%;
   width: 15vw;
