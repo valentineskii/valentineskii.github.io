@@ -333,7 +333,7 @@ footer {
   width: 15vw;
   height: 15vw;
   margin-top: 2vh;
-  border: 10px solid rgba(255,255,255,0.5);
+  border: 0.5vmax solid rgba(255,255,255,0.5);
 }
 
 
@@ -354,7 +354,7 @@ main {
   background-color: rgba(255,255,255,0.2);
   border: 3px solid rgba(150,0,75,0.1);
   margin-top: 2vh;
-  padding: 1.5vw 2vw;
+  padding: 1vmax;
   border-radius: 20px;
 }
 
@@ -364,11 +364,20 @@ main {
   line-height: 1em;
 }
 
-.content-item img {
+.content-img-left {
   border: 3px solid rgba(150,0,75,0.1); 
   border-radius: 10px; 
   float: left; 
-  margin: 0 20px 0 0;
-  width: 20%; 
-  height: 25%;
+  margin-right: 20px; 
+  width: 12vmax; 
+  height: 18vmax;
+}
+
+.content-img-right {
+  border: 3px solid rgba(150,0,75,0.1); 
+  border-radius: 10px; 
+  float: right;
+  margin-left: 20px; 
+  width: 12vmax; 
+  height: 18vmax;
 }
